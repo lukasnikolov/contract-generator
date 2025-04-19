@@ -18,6 +18,8 @@ def generate():
 
     doc = Document("smlouva.docx")
     placeholders = {
+        "{{cislo_smlouvy}}": data.get("cislo_smlouvy", ""),
+        "{{cislo_partnera}}": data.get("cislo_partnera", ""),
         "{{jmeno}}": data.get("jmeno", ""),
         "{{prijmeni}}": data.get("prijmeni", ""),
         "{{datum_narozeni}}": data.get("datum_narozeni", ""),
